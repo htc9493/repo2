@@ -1,0 +1,12 @@
+<project name="test" default="first">
+	<property name="version" value="123"/>
+	<echo>Hello world</echo>
+	
+	<target name="first" depends="second">
+	<mkdir dir="${version}" />
+	</target>
+	<target name="second" >
+	<echo> hello directory created</echo>
+	</target>
+
+</project>
