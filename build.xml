@@ -3,7 +3,7 @@
 	<echo>Hello world</echo>
 	
 	<target name="first" depends="second">
-	<mkdir dir="${version}" />
+	<delete dir="${version}" />
 	</target>
 	<target name="second" >
 	<echo> hello directory created</echo>
