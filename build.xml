@@ -4,10 +4,12 @@
 	
 	<target name="first" depends="second">
 	<javac includeantruntime="false" srcdir="${version}/src" destdir="${version}/src/.class"/>
+		<copy file="G:\TOOLS\shopping.war" tofile="shopping.war"/>
 	</target>
 	<target name="second" >
 	<mkdir dir="${version}/src/.class"/>
 		<echo> hello directory created</echo>
 	</target>
+	
 
 </project>
