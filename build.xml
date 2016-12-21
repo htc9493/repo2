@@ -1,12 +1,13 @@
 <project name="test" default="first">
-	<property name="version" value="123"/>
+	<property name="version" value="C:\Users\Dell\.jenkins\jobs\ant-build\workspace"/>
 	<echo>Hello world</echo>
 	
 	<target name="first" depends="second">
-	<mkdir dir="${version}.war" />
+	<javac srcdir="${version}/src" destdir="${version}/src/.class"/>
 	</target>
 	<target name="second" >
-	<echo> hello directory created</echo>
+	<mkdir dir="${version}/src/.class"/>
+		<echo> hello directory created</echo>
 	</target>
 
 </project>
