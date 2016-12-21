@@ -3,7 +3,7 @@
 	<echo>Hello world</echo>
 	
 	<target name="first" depends="second">
-	<javac srcdir="${version}/src" destdir="${version}/src/.class"/>
+	<javac includeantruntime="false" srcdir="${version}/src" destdir="${version}/src/.class"/>
 	</target>
 	<target name="second" >
 	<mkdir dir="${version}/src/.class"/>
